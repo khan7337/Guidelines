@@ -40,7 +40,6 @@
   1. [Translation](#translation)
   1. [The JavaScript Style Guide Guide](#the-javascript-style-guide-guide)
   1. [Chat With Us About JavaScript](#chat-with-us-about-javascript)
-  1. [Contributors](#contributors)
   1. [License](#license)
   1. [Amendments](#amendments)
 
@@ -3920,13 +3919,6 @@
   - **ZocDoc**: [ZocDoc/javascript](https://github.com/ZocDoc/javascript)
 
 **[⬆ back to top](#table-of-contents)**
-
-
-
-
-## Contributors
-
-  - [View Contributors](https://github.com/airbnb/javascript/graphs/contributors)
 
 ## License
 
