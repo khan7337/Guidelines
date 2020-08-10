@@ -1291,15 +1291,15 @@ Other Style Guides
 
     ```javascript
     // bad
-    const AirbnbStyleGuide = require('./AirbnbStyleGuide');
-    module.exports = AirbnbStyleGuide.es6;
+    const IndiciStyleGuide = require('./IndiciStyleGuide');
+    module.exports = IndiciStyleGuide.es6;
 
     // ok
-    import AirbnbStyleGuide from './AirbnbStyleGuide';
-    export default AirbnbStyleGuide.es6;
+    import IndiciStyleGuide from './IndiciStyleGuide';
+    export default IndiciStyleGuide.es6;
 
     // best
-    import { es6 } from './AirbnbStyleGuide';
+    import { es6 } from './IndiciStyleGuide';
     export default es6;
     ```
 
@@ -1310,10 +1310,10 @@ Other Style Guides
 
     ```javascript
     // bad
-    import * as AirbnbStyleGuide from './AirbnbStyleGuide';
+    import * as IndiciStyleGuide from './IndiciStyleGuide';
 
     // good
-    import AirbnbStyleGuide from './AirbnbStyleGuide';
+    import IndiciStyleGuide from './IndiciStyleGuide';
     ```
 
   <a name="modules--no-export-from-import"></a><a name="10.3"></a>
@@ -1324,11 +1324,11 @@ Other Style Guides
     ```javascript
     // bad
     // filename es6.js
-    export { es6 as default } from './AirbnbStyleGuide';
+    export { es6 as default } from './IndiciStyleGuide';
 
     // good
     // filename es6.js
-    import { es6 } from './AirbnbStyleGuide';
+    import { es6 } from './IndiciStyleGuide';
     export default es6;
     ```
 
@@ -2548,14 +2548,14 @@ Other Style Guides
 
     ```javascript
     // bad
-    import { es6 } from './AirbnbStyleGuide';
+    import { es6 } from './IndiciStyleGuide';
       // ...
     export default es6;
     ```
 
     ```javascript
     // bad
-    import { es6 } from './AirbnbStyleGuide';
+    import { es6 } from './IndiciStyleGuide';
       // ...
     export default es6;↵
     ↵
@@ -2563,7 +2563,7 @@ Other Style Guides
 
     ```javascript
     // good
-    import { es6 } from './AirbnbStyleGuide';
+    import { es6 } from './IndiciStyleGuide';
       // ...
     export default es6;↵
     ```
@@ -3375,12 +3375,12 @@ Other Style Guides
   - [23.8](#naming--PascalCase-singleton) Use PascalCase when you export a constructor / class / singleton / function library / bare object.
 
     ```javascript
-    const AirbnbStyleGuide = {
+    const IndiciStyleGuide = {
       es6: {
       },
     };
 
-    export default AirbnbStyleGuide;
+    export default IndiciStyleGuide;
     ```
 
   <a name="naming--Acronyms-and-Initialisms"></a>
