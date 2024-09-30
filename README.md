@@ -1,4 +1,4 @@
-# Indici Apps Javascript Style Guide() {
+# Apps Javascript Style Guide() {
 
 *A mostly reasonable approach to JavaScript*
 
@@ -1282,15 +1282,15 @@
 
     ```javascript
     // bad
-    const IndiciStyleGuide = require('./IndiciStyleGuide');
-    module.exports = IndiciStyleGuide.es6;
+    const testAppStyleGuide = require('./testAppStyleGuide');
+    module.exports = testAppStyleGuide.es6;
 
     // ok
-    import IndiciStyleGuide from './IndiciStyleGuide';
-    export default IndiciStyleGuide.es6;
+    import testAppStyleGuide from './testAppStyleGuide';
+    export default testAppStyleGuide.es6;
 
     // best
-    import { es6 } from './IndiciStyleGuide';
+    import { es6 } from './testAppStyleGuide';
     export default es6;
     ```
 
@@ -1301,10 +1301,10 @@
 
     ```javascript
     // bad
-    import * as IndiciStyleGuide from './IndiciStyleGuide';
+    import * as testAppStyleGuide from './testAppStyleGuide';
 
     // good
-    import IndiciStyleGuide from './IndiciStyleGuide';
+    import testAppStyleGuide from './testAppStyleGuide';
     ```
 
   <a name="modules--no-export-from-import"></a><a name="10.3"></a>
@@ -1315,11 +1315,11 @@
     ```javascript
     // bad
     // filename es6.js
-    export { es6 as default } from './IndiciStyleGuide';
+    export { es6 as default } from './testAppStyleGuide';
 
     // good
     // filename es6.js
-    import { es6 } from './IndiciStyleGuide';
+    import { es6 } from './testAppStyleGuide';
     export default es6;
     ```
 
@@ -2539,14 +2539,14 @@
 
     ```javascript
     // bad
-    import { es6 } from './IndiciStyleGuide';
+    import { es6 } from './testAppStyleGuide';
       // ...
     export default es6;
     ```
 
     ```javascript
     // bad
-    import { es6 } from './IndiciStyleGuide';
+    import { es6 } from './testAppStyleGuide';
       // ...
     export default es6;↵
     ↵
@@ -2554,7 +2554,7 @@
 
     ```javascript
     // good
-    import { es6 } from './IndiciStyleGuide';
+    import { es6 } from './testAppStyleGuide';
       // ...
     export default es6;↵
     ```
@@ -3366,12 +3366,12 @@
   - [23.8](#naming--PascalCase-singleton) Use PascalCase when you export a constructor / class / singleton / function library / bare object.
 
     ```javascript
-    const IndiciStyleGuide = {
+    const testAppStyleGuide = {
       es6: {
       },
     };
 
-    export default IndiciStyleGuide;
+    export default testAppStyleGuide;
     ```
 
   <a name="naming--Acronyms-and-Initialisms"></a>
